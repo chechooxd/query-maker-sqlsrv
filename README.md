@@ -6,7 +6,9 @@ Con el fin desarrollar una aplicacion capas de realizar querys sql de marena per
 
 puedes instalarlo desde npm 
 
-`$ mpm install query-maker-sqlserv`
+```Bash
+$ mpm install query-maker-sqlserv
+```
 
 ## Como se usa
 
