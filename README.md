@@ -24,11 +24,9 @@ const options = {
 const query =  queryMaker.createSelect(options)
 
 console.log(query)
-
-result 
-
-'select * from customers'
-
+```
+```Sql
+select * from customers
 ```
 
 ### Creacion de select con columnas
@@ -55,11 +53,9 @@ const options = {
 const query =  queryMaker.createSelect(options)
 
 console.log(query)
-
-result:
-
-'select customerId as Id, customerName as Name from customers'
-
+```
+```Sql
+select customerId as Id, customerName as Name from customers
 ```
 
 ### Creacion de select con condiciones
@@ -72,17 +68,16 @@ const options = {
 }
 
 const conditions = [
-    
+
 ]
 
 const query =  queryMaker.createSelect(options)
 
 console.log(query)
+```
 
-result 
-
-'select * from customers'
-
+```Sql
+    select * from customers where codiciones
 ```
 
 
