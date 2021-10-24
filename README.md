@@ -16,7 +16,7 @@ para la creacion de una query es obligacion otorgar un nombre de una tabla, de n
 
 ### Creacion de select 
 
-```[JS]
+```JS
 const queryMaker = require('query-maker-sqlserv')
 
 const options = {
@@ -33,7 +33,7 @@ select * from customers
 
 ### Creacion de select con columnas
 
-```[JS]
+```JS
 const queryMaker = require('query-maker-sqlserv')
 
 const columns = [
@@ -62,7 +62,7 @@ select customerId as Id, customerName as Name from customers
 
 ### Creacion de select con condiciones
 
-```[JS]
+```JS
 const queryMaker = require('query-maker-sqlserv')
 
 const options = {
@@ -70,7 +70,7 @@ const options = {
 }
 
 const conditions = [
-
+    
 ]
 
 const query =  queryMaker.createSelect(options)
@@ -79,7 +79,7 @@ console.log(query)
 ```
 
 ```Sql
-    select * from customers where codiciones
+select * from customers where codiciones
 ```
 
 
