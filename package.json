@@ -1,0 +1,15 @@
+{
+  "name": "query-maker-sqlserv",
+  "version": "1.0.0",
+  "description": "Creator of querys by Sql Server",
+  "main": "lib/index.js",
+  "types": "lib", 
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "author": "Sergio Galaz Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
