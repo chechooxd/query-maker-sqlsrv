@@ -1,5 +1,5 @@
 {
-  "name": "query-maker-sqlserv",
+  "name": "query-maker-sqlsrv",
   "version": "1.0.0",
   "description": "Creator of querys by Sql Server",
   "main": "lib/index.js",
