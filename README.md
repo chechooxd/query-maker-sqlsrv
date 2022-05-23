@@ -70,7 +70,11 @@ const options = {
 }
 
 const conditions = [
-    
+    {
+        columnName: "customerId",
+        operator: Operator.Equals,
+        value: 1
+    }
 ]
 
 const query =  queryMaker.createSelect(options)
@@ -79,7 +83,7 @@ console.log(query)
 ```
 
 ```Sql
-select * from customers where codiciones
+select * from customers where (customerId = 1)
 ```
 
 

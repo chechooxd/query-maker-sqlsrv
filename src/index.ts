@@ -8,7 +8,7 @@ export function createSelect(options: Models.ISelectOptions): Models.IResult {
     const first = options.limit ? ` top ${options.limit} ` : ' '
 
     let result: Models.IResult = {
-        query: `select${first}${columns} from ${options.table}`
+        query: `select ${first}${columns} from ${options.table}`
     }
 
     if(options.join) {
