@@ -4,7 +4,7 @@ Con el fin desarrollar una aplicacion capas de realizar querys sql de marena per
 
 ## Instalacion
 
-puedes instalarlo desde npm 
+puedes instalarlo desde npm
 
 ```Bash
 $ mpm install query-maker-sqlserv
@@ -14,7 +14,7 @@ $ mpm install query-maker-sqlserv
 
 para la creacion de una query es obligacion otorgar un nombre de una tabla, de no se asi la aplicacion no sera capas de crear dicha query
 
-### Creacion de select 
+### Creacion de select
 
 ```JS
 const queryMaker = require('query-maker-sqlserv')
@@ -27,6 +27,7 @@ const query =  queryMaker.createSelect(options)
 
 console.log(query)
 ```
+
 ```Sql
 select * from customers
 ```
@@ -56,6 +57,7 @@ const query =  queryMaker.createSelect(options)
 
 console.log(query)
 ```
+
 ```Sql
 select customerId as Id, customerName as Name from customers
 ```
@@ -65,10 +67,6 @@ select customerId as Id, customerName as Name from customers
 ```JS
 const queryMaker = require('query-maker-sqlserv')
 
-const options = {
-    tabla: 'customers'
-}
-
 const conditions = [
     {
         columnName: "customerId",
@@ -76,6 +74,12 @@ const conditions = [
         value: 1
     }
 ]
+
+const options = {
+    tabla: 'customers'
+    condition: conditions
+}
+
 
 const query =  queryMaker.createSelect(options)
 
@@ -86,4 +90,21 @@ console.log(query)
 select * from customers where (customerId = 1)
 ```
 
+### Creacion de select con joins
 
+#### Creacion de select con inner join
+
+```JS
+const queryMaker = require('query-maker-sqlserv')
+
+const joins = [
+    {
+        type:
+    }
+]
+
+const options = {
+    tabla: 'customers'
+}
+
+```
