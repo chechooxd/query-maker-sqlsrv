@@ -1,9 +1,9 @@
 {
   "name": "query-maker-sqlsrv",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Creator of querys by Sql Server",
   "main": "lib/index.js",
-  "types": "lib", 
+  "types": "lib",
   "scripts": {
     "build": "tsc -p .",
     "dev": "npm run build && node ./lib/index.js"
@@ -12,5 +12,13 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.4.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chechooxd/query-maker-sqlsrv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chechooxd/query-maker-sqlsrv/issues"
+  },
+  "homepage": "https://github.com/chechooxd/query-maker-sqlsrv#readme"
 }
